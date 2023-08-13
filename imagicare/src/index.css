@@ -14,8 +14,8 @@ header {
 }
 
 .logo img {
-  max-width: 100%; /* Ajusta o tamanho da imagem para não ultrapassar a div */
-  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%;
+  height: auto;
 }
 
 nav ul {
@@ -34,9 +34,11 @@ main {
 }
 
 .step {
+  padding: 10px;
+  border-radius: 20px;
   margin-bottom: 30px;
   display: inline-block;
-  width: 48%;
+  width: 40%;
 }
 
 .steps {
@@ -46,21 +48,22 @@ main {
 }
 
 .step:nth-child(odd) {
-  margin-right: 2%; /* Espaçamento entre os passos */
+  margin-right: 2%;
 }
 
 .step:nth-child(even) {
-  margin-left: 1%; /* Espaçamento entre os passos */
+  margin-left: 1%;
 }
 
 
 .steps-group {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px; /* Espaço grande entre os grupos de passos */
+  margin-bottom: 50px;
 }
 
-.step select, .step input[type="date"] {
+.step select,
+.step input[type="date"] {
   width: 100%;
 }
 
@@ -69,7 +72,8 @@ main {
   margin-bottom: 5px;
 }
 
-select, input[type="date"] {
+select,
+input[type="date"] {
   padding: 10px;
   width: 100%;
   border: 1px solid #ccc;
@@ -83,7 +87,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -122,5 +127,105 @@ main {
 }
 
 .spacer {
-  height: 20px; /* Define a altura do espaço entre as div */
+  height: 20px;
+}
+
+/* Tela Agendamentos */
+
+.agendamentos {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.agendamentos h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.time-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.time-table th,
+.time-table td {
+  padding: 10px 15px;
+  text-align: center; /* Centraliza o conteúdo */
+  border-bottom: 1px solid #ccc;
+}
+
+.time-table th {
+  background-color: #f0f0f0;
+}
+
+.reagendar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reagendar:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px; /* Largura da barra lateral */
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar .logo img {
+  max-width: 100%;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.result-table th,
+.result-table td {
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.result-table th {
+  background-color: #f0f0f0;
+}
+
+.visualizar,
+.download {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.visualizar:hover,
+.download:hover {
+  background-color: #0056b3;
 }

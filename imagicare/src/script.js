@@ -45,4 +45,3 @@ document.addEventListener("DOMContentLoaded", function() {
     // Atualizar os horários iniciais ao carregar a página
     atualizarHorarios();
   });
-  
