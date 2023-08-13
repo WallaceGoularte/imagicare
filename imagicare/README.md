@@ -1,6 +1,6 @@
 <h3 align="center"><strong>PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS</strong></h3>
 
-<h2 align="center">PUC Minas Virtual</h2>
+<h3 align="center">PUC Minas Virtual</h3>
 
 <h3 align="center">Pós-graduação Lato Sensu em Engenharia de Software</h3>
 <br>
