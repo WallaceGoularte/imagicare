@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -20,11 +20,11 @@
     <nav>
       <a href="index.html">Início</a>
       <div class="greeting">
-        <a href="#">Agendamento</a>
+        <a href="agendamentos.html">Agendamento</a>
       </div>
-      <a href="#">Resultados</a>
+      <a href="resultadoExames.html">Resultados</a>
       <div class="greeting">
-        <a href="#">Sair</a>
+        <a href="login.html">Sair</a>
       </div>
     </nav>
   </div>
@@ -34,6 +34,7 @@
       <h2>Agende seu exame:</h2>
       <p>Passo 1: Escolha que exame irá realizar</p>
       <select id="exame">
+        <option value="">Selecione</option>
         <option value="ultrassom">Ultrassom</option>
         <option value="tomografia">Tomografia</option>
         <option value="ressonancia">Ressonância</option>
@@ -42,6 +43,7 @@
     <div class="step">
       <p>Passo 2: Escolha o médico de preferência</p>
       <select id="medico">
+        <option value="">Selecione</option>
         <option value="medico1">Médico 1</option>
         <option value="medico2">Médico 2</option>
         <option value="medico3">Médico 3</option>
@@ -64,7 +66,6 @@
               </tr>
             </thead>
             <tbody>
-              <!-- Preencha aqui com as opções de hora e médico -->
               <tr>
                 <td>09:00</td>
                 <td>Dr. Smith</td>
@@ -73,12 +74,17 @@
                 <td>10:00</td>
                 <td>Dra. Johnson</td>
               </tr>
-              <!-- ... Mais linhas ... -->
             </tbody>
           </table>
         </div>
       </div>
     </div>
+    <button id="btn-agendamentos" class="reagendar">Realizar Marcação</button>
+    <script>
+      document.getElementById("btn-agendamentos").addEventListener("click", function() {
+        window.location.href = "agendamentos.html";
+      });
+    </script>
   </main>
 </body>
 
