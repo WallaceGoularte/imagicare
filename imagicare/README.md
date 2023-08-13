@@ -23,7 +23,7 @@
 </p>
 
 Links do Projeto
--  Repositório: [https://github.com/dornelas/flow](https://github.com/WallaceGoularte/imagicare/tree/main/imagicare)
+-  Repositório: [ https://github.com/imagicare](https://github.com/WallaceGoularte/imagicare/tree/main/imagicare)
 - Relatório Técnico: 
 - Vídeo Wireframes: 
 - Wireframes: 
