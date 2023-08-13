@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>ImagiCare</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <div class="sidebar">
+    <div class="logo">
+      <img src="logo192.png" alt="Logo">
+    </div>
+    <div class="greeting">
+      <p>Olá, Visitante</p>
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <div class="greeting">
+        <a href="#">Agendamento</a>
+      </div>
+      <a href="#">Resultados</a>
+      <div class="greeting">
+        <a href="#">Sair</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <div class="step">
+      <h2>Agende seu exame:</h2>
+      <p>Passo 1: Escolha que exame irá realizar</p>
+      <select id="exame">
+        <option value="ultrassom">Ultrassom</option>
+        <option value="tomografia">Tomografia</option>
+        <option value="ressonancia">Ressonância</option>
+      </select>
+    </div>
+    <div class="step">
+      <p>Passo 2: Escolha o médico de preferência</p>
+      <select id="medico">
+        <option value="medico1">Médico 1</option>
+        <option value="medico2">Médico 2</option>
+        <option value="medico3">Médico 3</option>
+        <option value="medico4">Médico 4</option>
+      </select>
+    </div>
+    <div class="steps-group">
+      <div>
+        <p>Passo 3: Escolha a data desejada</p>
+        <input type="date" id="data">
+      </div>
+      <div>
+        <p> Passo 4: Escolha o horário desejado</p>
+        <div class="time-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Médico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Preencha aqui com as opções de hora e médico -->
+              <tr>
+                <td>09:00</td>
+                <td>Dr. Smith</td>
+              </tr>
+              <tr>
+                <td>10:00</td>
+                <td>Dra. Johnson</td>
+              </tr>
+              <!-- ... Mais linhas ... -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
